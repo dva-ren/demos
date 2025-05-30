@@ -1,12 +1,11 @@
 <script lang="ts" setup>
 const el = ref<HTMLCanvasElement>()
 onMounted(() => {
-  el.value!.width = document.documentElement.clientWidth
-  el.value!.height = document.documentElement.clientHeight
+  initCanvas(el.value!)
 })
-const ctx = computed(() => el.value.getContext('2d')!)
+const ctx = computed(() => el.value!.getContext('2d')!)
 
-const taskBucket: Function[] = []
+const taskBucket: (() => void)[] = []
 interface Point {
   x: number
   y: number
@@ -21,7 +20,7 @@ interface Branch {
 function init() {
   ctx.value.strokeStyle = '#000'
   step({
-    start: { x: 400, y: el.value.height },
+    start: { x: 400, y: el.value!.height },
     length: 10,
     angle: -Math.PI / 2,
   }, 0)

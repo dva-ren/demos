@@ -58,8 +58,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <a-slider v-model="speed" :min="5" :max="100" :style="{ width: '400px' }" />
+  <input v-model="speed" type="range" :min="5" :max="100" :style="{ width: '400px' }">
   <div>
-    <canvas ref="canvas" />
+    <canvas ref="canvas" bg-black />
   </div>
 </template>
