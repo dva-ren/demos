@@ -24,6 +24,7 @@ declare module 'vue-router/auto-routes' {
     '/canvas/codeRain/': RouteRecordInfo<'/canvas/codeRain/', '/canvas/codeRain', Record<never, never>, Record<never, never>>,
     '/canvas/line/': RouteRecordInfo<'/canvas/line/', '/canvas/line', Record<never, never>, Record<never, never>>,
     '/canvas/musicWaveform/': RouteRecordInfo<'/canvas/musicWaveform/', '/canvas/musicWaveform', Record<never, never>, Record<never, never>>,
+    '/canvas/starBg/': RouteRecordInfo<'/canvas/starBg/', '/canvas/starBg', Record<never, never>, Record<never, never>>,
     '/canvas/tree/': RouteRecordInfo<'/canvas/tree/', '/canvas/tree', Record<never, never>, Record<never, never>>,
     '/compoent/heart/': RouteRecordInfo<'/compoent/heart/', '/compoent/heart', Record<never, never>, Record<never, never>>,
     '/compoent/imageZoom/': RouteRecordInfo<'/compoent/imageZoom/', '/compoent/imageZoom', Record<never, never>, Record<never, never>>,
